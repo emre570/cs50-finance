@@ -3,24 +3,24 @@
 
 int main(void)
 {
-    int yükseklik;
-    int boşluk;
-    int blok;
+    int height;
+    int space;
+    int hash;
     
     do
     {
-        yükseklik = get_int("Yükseklik:");
+        height = get_int("Height:");
     }
-    while(yükseklik<0 || yükseklik>23);
+    while(height<0 || height>23);
 
-    for(int i=0; i<yükseklik; i++)
+    for(int i=0; i<height; i++)
     {
-        for(boşluk = (yükseklik-i); boşluk>=2; boşluk--)
+        for(space = (height-i); space>=2; space--)
         {
             printf("");
         }
 
-        for(blok=0; blok<=(i+1); blok++)
+        for(hash=0; hash<=(i+1); hash++)
         {
             printf("#");
         }
