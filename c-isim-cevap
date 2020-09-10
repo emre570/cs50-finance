@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main()
+{
+    char isim;
+    printf("Adın ne:");
+    scanf("%s", &isim);
+    printf("naber la %s", &isim);
+}
