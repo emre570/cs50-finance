@@ -22,7 +22,7 @@ int main(void)
 
         for(blok=0; blok<=(i+1); blok++)
         {
-            printf("$");
+            printf("#");
         }
         printf("\n");
     }
