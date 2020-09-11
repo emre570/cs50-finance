@@ -1,4 +1,4 @@
-//Bu kod yazdığınız kelimenin, kelimelerin kaç harf olduğunu gösterir. 
+//Bu kod yazdığınız ismin kaç harf olduğunu gösterir. 
 #include <stdio.h>
 #include <string.h>
 
@@ -15,5 +15,5 @@ int main (void)
     {
         n++;
     }
-    printf("%i\n", n);
+    printf("%i harf\n", n);
 }
