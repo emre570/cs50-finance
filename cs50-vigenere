@@ -28,12 +28,12 @@ int main(int argc, string argv[])
     {
         if(isupper(plaintext[i])) // Z - 'A' + key %26
         {
-            printf("%c", ((plaintext[i] - 'A' + key[k]) % 26 + 'A'));
+            printf("%c", ((plaintext[i] - 'A' + toupper(key[k])- 'A') % 26 + 'A'));
             k = (k + 1) % lenk;
         }
         else if(islower(plaintext[i]))
         {
-            printf("%c", ((plaintext[i] - 'a' + key[k]) % 26 + 'a'));
+            printf("%c", ((plaintext[i] - 'a' + toupper(key[k])- 'A') % 26 + 'a'));
             k = (k + 1) % lenk;
         }
         else
