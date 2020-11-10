@@ -2,7 +2,6 @@ s = int(input())
 
 student = list()
 notes = list()
-classroom = [student] + [notes]
 
 for i in range(s):
     name = input()
@@ -10,6 +9,10 @@ for i in range(s):
     score = float(input())
     notes.append(score)
 
-print(student)
-print(notes)
-print(classroom)
+classroom = list(zip(student, notes))
+classroom.sort()
+
+#print(student)
+#print(notes)
+#print(classroom[-1])
+print(classroom[1][0])
